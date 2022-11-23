@@ -39,7 +39,7 @@ body {
 }
 
 .mail-form input {
-  width: 45%;
+  width: 50%;
   padding: 1.2rem 2rem 1.2rem;
   border-radius: 2rem;
   text-align: center;
@@ -124,7 +124,7 @@ body {
 }
 
 .button {
-  width: 60%;
+  width: 65%;
   margin: 2rem auto 2rem;
   padding: 1rem 2rem 1rem;
   border-radius: 2rem;
