@@ -1,11 +1,17 @@
 body {
   font-family: 'Jura', sans-serif;
-  width: 75%;
-  margin: 0 auto;
   font-size: 1.7rem;
-  background-image: url("https://i.gifer.com/CSj.gif");
-  background-size: cover;
+  /*background-image: url("https://i.gifer.com/CSj.gif");
+  background-size: cover;*/
   color: #FFFFFF;
+}
+
+.content {
+  width: 75%;
+  margin: -10rem auto;
+  padding: 10rem 0 5rem;
+  top: 0;
+  bottom: 0;
 }
 
 .main-title {
@@ -136,21 +142,23 @@ body {
   color: #FFFFFF;
 }
 
-.button a{
+.button a {
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
   color: #000000;
 }
 
-@media (max-width: 700px) {
-  body {
-    width: auto;
-    font-size: 1.3rem;
-  }
 
+
+@media (max-width: 800px) {
   body h1 {
     font-size: 1.7rem;
+  }
+
+  .content {
+    width: auto;
+    font-size: 1.3rem;
   }
 
   .one-half,
@@ -162,4 +170,12 @@ body {
   .header {
     position: relative;
   }
+
+  .button a{
+    font-size: 1.5rem;
+  }
+
+  .mail-form input::placeholder {
+  font-size: 1.4rem;
+}
 }
