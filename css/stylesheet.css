@@ -311,4 +311,7 @@ body {
     font-size: 2rem;
   }
 
+  .review {
+    margin: 0.2rem 0 0.2rem;
+  }
 }
