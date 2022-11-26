@@ -1,6 +1,7 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 1.7rem;
+  background-color: #FFFFFF;
   color: #000000;
   width: 100%;
 }
@@ -21,6 +22,16 @@ body {
   bottom: 0;
 }
 
+.section-buy .main-title {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+.mail-form {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
 .section-reviews .main-title {
   font-size: 4rem;
   color: #FFFFFF;
@@ -31,7 +42,7 @@ body {
   top: 0;
   width: auto;
   height: 5rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .header ul{
@@ -64,15 +75,22 @@ body {
   margin-top: 1rem;
 }
 
+.mail-form {
+  box-sizing: border-box;
+  background-color: #f6f4e1;
+  border-radius: 2rem;
+  padding: 1.5rem 0.5rem 1.5rem;
+}
+
 .nav-link:hover,
 .mail-form input:hover {
-  background-color: #FAECE3;
+  background-color: #FFFFFF;
 }
 
 .nav-link:focus,
 .mail-form input:hover,
 .mail-form input:focus {
-  background-color: #F5E2CC;
+  background-color: #f6f4e1;
   outline: none
 }
 
@@ -83,37 +101,43 @@ body {
 
 .mail-form input {
   box-sizing: border-box;
-  width: 60%;
-  min-width: 295px;
+  width: 45%;
+  min-width: 200px;
   box-shadow: 5px 5px 5px black;
   padding: 1.2rem 2rem 1.2rem;
-  margin: 2rem 0 2rem;
+  margin: 1rem 0 1rem;
   border-radius: 2rem;
+  border-color: black;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .mail-form input::placeholder {
-  color: rgba(0, 0, 0, 1);
-  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
 }
 
 .mail-form input[type="submit"] {
-  width: 60%;
-  min-width: 295px;
-  background-color: #FFFFFF;
-  color: rgba(0, 0, 0, 0.5);
+  width: 45%;
+  min-width: 200px;
+  background-color: #ff5358;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.mail-form input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 .section-buy {
-  width: 75%;
-  margin: 0 auto 25rem;
-  padding: 4rem 0 4rem;
+  width: 90%;
+  margin: 4rem auto 5rem;
+  padding: 0 0 4rem;
 }
 
 .section {
-  margin: 20rem auto;
+  box-sizing: border-box;
+  margin: 2rem auto 3rem;
   padding: 4rem 0 4rem;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4rem;
@@ -124,6 +148,10 @@ body {
   border-radius: 3rem;
   width: 80%;
   max-width: 600px;
+}
+
+.section-buy img {
+  min-width: 400px;
 }
 
 .section-reviews {
@@ -155,8 +183,9 @@ body {
 }
 
 .column-1-4 {
-  margin: 2rem 0.5rem 5rem;
-  width: 24%;
+  box-sizing: border-box;
+  margin: 1rem 0.5rem;
+  width: 23%;
 }
 
 .column-1-3 img,
@@ -168,8 +197,7 @@ body {
 .item {
   height: 330px;
   background-color: rgba(255, 255, 255, 0.9 );
-  margin-bottom: 5rem;
-  padding-top: 2rem;
+  padding: 2rem 1rem;
   border-radius: 2rem;
   text-align: center;
 }
@@ -186,13 +214,9 @@ body {
 
 .section:after,
 .features:after,
-.review:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.section-reviews:after {
+.review:after,
+.section-reviews:after,
+.section-buy:after {
   content: '';
   display: block;
   clear: both;
@@ -205,7 +229,8 @@ body {
 }
 
 .features {
-  margin: 2rem 0 1rem;
+  margin: auto;
+  width: 75%;
 }
 
 .review {
@@ -256,7 +281,23 @@ body {
   .nav-link {
     font-size: 1.3rem;
   }
+
+  .features {
+    width: 75%;
+  }
+
+  .section-buy .main-title {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
 }  
+
+@media (max-width: 1450px) {
+  .section-buy img {
+    margin-top: 5rem;
+  }
+}
 
 @media (max-width: 900px) {
   body h1 {
@@ -264,7 +305,7 @@ body {
   }
 
   .section {
-    margin: 2rem;
+    margin: 2rem 0;
   }
 
   .section-buy {
@@ -272,7 +313,9 @@ body {
   }
 
   .section-buy img {
+    margin-top: 0;
     border-radius: 3rem;
+    min-width: 130px;
     width: 100%;
   }
 
@@ -342,6 +385,11 @@ body {
     margin-left: 4.2rem;
   }
 
+  .mail-form {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
   .mail-form input::placeholder {
     font-size: 0.9rem;
   }
@@ -364,8 +412,16 @@ body {
     margin: 1rem 0 1rem;
   }
 
+  .features {
+    width: auto;
+  }
+  .features .main-title,
+  .section-reviews .main-title {
+    font-size: 3rem;
+  }
+
   .item {
     margin-bottom: 2rem;
-    min-height: 200px;
+    height: 250px;
   }
 }
