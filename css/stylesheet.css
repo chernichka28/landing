@@ -114,7 +114,7 @@ body {
 
 .mail-form label {
   color: #FFFFFF;
-  text-shadow: 5px 5px 5px #000000;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .mail-form input::placeholder {
