@@ -124,6 +124,10 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.red-text {
+  color: #ff5358;
+}
+
 .mail-form input[type="submit"]:hover {
   cursor: pointer;
 }
