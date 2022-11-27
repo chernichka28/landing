@@ -113,7 +113,7 @@ body {
 }
 
 .mail-form label {
-  box-shadow: 5px 5px 5px white;
+  text-shadow: 5px 5px 5px #FFFFFF;
 }
 
 .mail-form input::placeholder {
