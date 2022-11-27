@@ -112,6 +112,10 @@ body {
   font-weight: bold;
 }
 
+.mail-form label {
+  box-shadow: 5px 5px 5px white;
+}
+
 .mail-form input::placeholder {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
