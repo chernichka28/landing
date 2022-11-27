@@ -220,6 +220,10 @@ body {
   font-size: 4rem;
 }
 
+.main-title p {
+  text-shadow: 2px 2px 2px #000000;
+}
+
 .section:after,
 .features:after,
 .review:after,
